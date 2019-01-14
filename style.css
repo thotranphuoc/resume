@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            margin: 0;
+            background-color: #eee;
+            height: auto;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            margin: 0;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        #landing {
+            background: white;
+        }
+
+        #landing-text {
+            background: #fff;
+            display: flex;
+            flex: 0 1 40vw;
+            height: 50vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+
+        #landing-text h2 {
+            color: #888;
+        }
+
+        #buttons a {
+            display: block;
+            text-align: right;
+        }
+
+        #landing-image {
+            background: url(https://source.unsplash.com/KGPu0ZwULyg);
+            height: 50vh;
+            flex: 0 1 60vw;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            /* border: 1px #ccc solid; */
+            display: inline-block;
+            margin: 1rem 0 0;
+            border-radius: 40px;
+            text-decoration: none;
+            /* remove underline of href  */
+            color: #333;
+            transition: background 500ms ease;
+            /* trang thai thay doi sau 0.5s */
+        }
+
+        .btn:hover {
+            background: #f4f4f4;
+        }
+
+        #header {
+            padding: 1.5rem;
+            text-align: center;
+            background: #333;
+            color: #fff;
+        }
+
+        #header h2 {
+            border-left: dotted 1px #fff;
+            border-right: dotted 1px #fff;
+            display: inline-block;
+            padding: 0 1rem 0 1rem;
+
+        }
+
+        .caption {
+            padding: 0.8rem;
+            /* text-align: center; */
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin: auto;
+            color: #333;
+        }
+
+        footer h3 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+
+        .title {
+            font-weight: 400;
+            font-size: 1.5rem;
+
+        }
+
+        .time {
+            font-style: inherit;
+            color: #333;
+        }
+
+
+        .starring {
+            text-align: right;
+        }
+
+        .stared {
+            height: 12px;
+            width: 12px;
+            background-color: #333;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .unstared {
+            height: 12px;
+            width: 12px;
+            background-color: white;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .myfooter{
+            /* float: left; */
+            background-color: #333;
+            text-align: center;
+            /* height: 300px; */
+            min-height: 230px;
+            color: white;
+        }
+
+        .avatar{
+            padding: 10px;
+            float: right;
+            width: 50%;
+            box-sizing: border-box;
+            /* text-align: center; */
+        }
+
+        .avatar img{
+            width: 200px;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .person-info{
+            padding: 10px;
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .person-info h2{
+            font-size: 2em;
+            color: white;
+            margin-bottom: 0px;
+        }
+
+        .person-info h3, p{
+            margin: 0;
+            /* margin-bottom: 15px; */
+        }
+
+        .person-info h3{
+            margin-bottom: 15px;
+        }
+
+
+
+        .person-info h4{
+            
+            background: white;
+            color: black;
+            text-transform: uppercase;
+            /* padding: 10px 15px; */
+            border-radius: 5px 5px 5px 5px;
+            width: 170px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .icons{
+            /* text-align: center; */
+            /* margin-top: 30px; */
+        }
+
+        /* .icons a{
+            display: inline;
+            
+        } */
+
+        .icons img{
+            /* display: inline-flex; */
+            display: inline;
+            width: 50px;
+            height: 50px;
+            /* float: left; */
+        }
+
+        /* .icons img:nth-child(1){
+            margin:1px;
+            width: 95px;
+            height: 95px;
+        } */
+
+
+        /* Screen size 500px and up */
+
+        @media (min-width: 500px) {
+            #landing {
+                display: flex;
+                height: 100%;
+            }
+
+            #landing-text {
+                height: 100vh;
+            }
+
+            #landing-image {
+                height: 100vh;
+            }
+        }
+
+        /* Screen size 700px and up */
+
+        @media(min-width: 700px) {
+            .btn {
+                padding: 1rem 3rem;
+            }
+        }
+
+        @media(max-width: 500px){
+            .avatar{
+                float: none;
+                width: 100%;
+            }
+
+            .person-info{
+                float: none;
+                width: 100%;
+            }
+
+            .person-info h4{
+                width: 130px;
+            }
+
+            .icons img{
+                /* display: inline-flex; */
+                display: inline;
+                width: 40px;
+                height: 40px;
+                /* float: left; */
+            }
+        }
